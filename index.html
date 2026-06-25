@@ -1,0 +1,1028 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROFiiT Painting Consultants | Commercial Painting</title>
+  <meta name="description" content="Commercial painting done with precision, accountability, and proven systems. PROFiiT Painting Consultants serves property managers, facility directors, general contractors, HOA boards, universities, multifamily owners, and commercial building owners.">
+  <style>
+    :root {
+      --black: #050505;
+      --charcoal: #111315;
+      --dark-gray: #1B1F23;
+      --line: #2A3036;
+      --gray: #B9BEC4;
+      --muted: #C8CDD2;
+      --light: #E7E9EC;
+      --white: #FFFFFF;
+      --orange: #F36C21;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--black);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      padding: 20px 7vw;
+      background: rgba(5, 5, 5, .92);
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+      backdrop-filter: blur(12px);
+    }
+
+    .brand {
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .brand span {
+      color: var(--orange);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 18px;
+      color: var(--light);
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: var(--orange);
+    }
+
+    .hero {
+      min-height: 720px;
+      display: flex;
+      align-items: center;
+      padding: 96px 7vw;
+      background:
+        linear-gradient(90deg, rgba(5, 5, 5, .96), rgba(5, 5, 5, .74), rgba(5, 5, 5, .34)),
+        url('assets/profiit-commercial-hero.png') center/cover no-repeat;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-inner {
+      max-width: 980px;
+    }
+
+    .kicker {
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 950px;
+      margin-bottom: 28px;
+      font-size: clamp(44px, 6vw, 86px);
+      line-height: .96;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 14px 0 16px;
+      font-size: clamp(34px, 4vw, 58px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin-bottom: 12px;
+      font-size: 22px;
+      line-height: 1.15;
+    }
+
+    .hero p,
+    .section-head p,
+    .split-copy p,
+    .page-hero p {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: var(--light);
+      font-size: 20px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      min-height: 52px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 24px;
+      border-radius: 4px;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--orange);
+      color: var(--black);
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255, 255, 255, .36);
+      color: var(--white);
+    }
+
+    .trust-bar {
+      margin-top: 36px;
+      color: #AEB4BA;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .section {
+      padding: 92px 7vw;
+      background: var(--black);
+    }
+
+    .section.alt {
+      background: var(--charcoal);
+    }
+
+    .section.orange {
+      background: var(--orange);
+      color: var(--black);
+    }
+
+    .section-head {
+      max-width: 900px;
+      margin-bottom: 44px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+      min-height: 100%;
+      padding: 28px;
+      background: var(--charcoal);
+      border: 1px solid #252A30;
+      border-radius: 6px;
+    }
+
+    .alt .card {
+      background: var(--black);
+    }
+
+    .card:before {
+      content: "";
+      display: block;
+      width: 42px;
+      height: 3px;
+      margin-bottom: 24px;
+      background: var(--orange);
+    }
+
+    .card p,
+    .step p,
+    .list-item p,
+    .project-card p,
+    .industry-list li {
+      margin-bottom: 0;
+      color: var(--gray);
+      line-height: 1.55;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      gap: 54px;
+      align-items: start;
+    }
+
+    .list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .list-item {
+      padding: 24px;
+      background: rgba(255, 255, 255, .035);
+      border-left: 3px solid var(--orange);
+    }
+
+    .list-item h3 {
+      margin-bottom: 8px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+
+    .step {
+      padding: 30px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .step b {
+      color: var(--orange);
+      font-size: 14px;
+    }
+
+    .project-card {
+      overflow: hidden;
+      background: var(--charcoal);
+      border: 1px solid #252A30;
+      border-radius: 6px;
+    }
+
+    .project-visual {
+      min-height: 190px;
+      background:
+        linear-gradient(135deg, rgba(243, 108, 33, .75), rgba(17, 19, 21, .92)),
+        url('assets/profiit-commercial-hero.png') center/cover no-repeat;
+    }
+
+    .project-card:nth-child(2) .project-visual {
+      background:
+        linear-gradient(135deg, rgba(5, 5, 5, .2), rgba(17, 19, 21, .96)),
+        url('assets/profiit-commercial-hero.png') center/cover no-repeat;
+    }
+
+    .project-card:nth-child(3) .project-visual {
+      background:
+        linear-gradient(135deg, rgba(115, 121, 128, .35), rgba(5, 5, 5, .92)),
+        url('assets/profiit-commercial-hero.png') center/cover no-repeat;
+    }
+
+    .project-body {
+      padding: 28px;
+    }
+
+    .industry-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .industry-list li {
+      padding: 18px 20px;
+      background: var(--charcoal);
+      border: 1px solid #252A30;
+      border-radius: 6px;
+    }
+
+    .page-hero {
+      padding: 110px 7vw 70px;
+      background:
+        linear-gradient(135deg, rgba(5, 5, 5, .98), rgba(17, 19, 21, .92)),
+        var(--black);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .page-hero h2 {
+      max-width: 960px;
+      font-size: clamp(42px, 5vw, 72px);
+    }
+
+    .case-study {
+      display: grid;
+      grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr);
+      gap: 28px;
+      padding: 32px;
+      background: var(--charcoal);
+      border: 1px solid #252A30;
+      border-radius: 6px;
+    }
+
+    .case-study strong {
+      color: var(--orange);
+    }
+
+    .case-study p {
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr);
+      gap: 34px;
+      align-items: start;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 14px;
+    }
+
+    .field {
+      display: grid;
+      gap: 7px;
+    }
+
+    .field label {
+      color: var(--light);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 14px;
+      background: #0B0C0D;
+      color: var(--white);
+      border: 1px solid #2A3036;
+      border-radius: 4px;
+      font: inherit;
+    }
+
+    .field textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .note-panel {
+      padding: 28px;
+      background: var(--charcoal);
+      border: 1px solid #252A30;
+      border-radius: 6px;
+    }
+
+    .note-panel p {
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    .footer {
+      padding: 38px 7vw;
+      color: #AEB4BA;
+      background: var(--black);
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 14px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+    }
+
+    .orange .kicker,
+    .orange p {
+      color: var(--black);
+    }
+
+    .orange .btn {
+      margin-top: 20px;
+      background: var(--black);
+      color: var(--white);
+    }
+
+    @media (max-width: 980px) {
+      .grid,
+      .grid.two,
+      .steps,
+      .industry-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .split,
+      .case-study,
+      .contact-wrap {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .site-nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 24px;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+        gap: 12px;
+      }
+
+      .hero,
+      .section,
+      .page-hero {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .hero {
+        min-height: 640px;
+        padding-top: 72px;
+        padding-bottom: 72px;
+      }
+
+      .section {
+        padding-top: 72px;
+        padding-bottom: 72px;
+      }
+
+      .page-hero {
+        padding-top: 80px;
+        padding-bottom: 56px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .grid,
+      .grid.two,
+      .steps,
+      .industry-list {
+        grid-template-columns: 1fr;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <a class="brand" href="#home">PROFiiT <span>Painting</span></a>
+    <div class="nav-links" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#process">Our Process</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#technology">Technology</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="kicker">Commercial Painting + Project Management Discipline</div>
+        <h1>Commercial Painting Done With Precision, Accountability, and Proven Systems.</h1>
+        <p>PROFiiT Painting Consultants delivers commercial painting projects with disciplined project management, clear communication, and repeatable systems built for owners, facility teams, property managers, and contractors.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#contact">Request a Project Consultation</a>
+          <a class="btn btn-secondary" href="#process">View Our Process</a>
+        </div>
+        <div class="trust-bar">Commercial Painting | Project Management | Facility Repaints | Multifamily | HOA | Institutional | Contractor Support</div>
+      </div>
+    </section>
+
+    <section class="section" id="project-types">
+      <div class="section-head">
+        <div class="kicker">Project Types Served</div>
+        <h2>Commercial Painting Built for Real-World Properties.</h2>
+        <p>From active buildings to large portfolio repaint programs, PROFiiT brings the planning, manpower coordination, documentation, and field accountability needed to keep commercial painting projects moving.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Commercial Repaints</h3>
+          <p>Interior and exterior painting for office, retail, hospitality, and commercial properties where appearance, access, and schedule all matter.</p>
+        </article>
+        <article class="card">
+          <h3>Multifamily Communities</h3>
+          <p>Exterior repaints, common areas, corridors, clubhouses, leasing offices, amenity spaces, and phased painting programs for occupied communities.</p>
+        </article>
+        <article class="card">
+          <h3>HOA & Condominium Properties</h3>
+          <p>Organized painting programs for boards and property managers that require clear scope, communication, scheduling, and resident awareness.</p>
+        </article>
+        <article class="card">
+          <h3>Facility & Industrial Painting</h3>
+          <p>Painting support for warehouses, service facilities, manufacturing spaces, maintenance areas, doors, steel, safety markings, and specialty surfaces.</p>
+        </article>
+        <article class="card">
+          <h3>Institutional & Campus Work</h3>
+          <p>Painting for universities, schools, municipal buildings, and managed facilities with high standards for coordination and documentation.</p>
+        </article>
+        <article class="card">
+          <h3>General Contractor Support</h3>
+          <p>Commercial painting crews and project support for construction schedules, punch lists, tenant improvements, and renovation scopes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="split">
+        <div class="split-copy">
+          <div class="kicker">The PROFiiT Difference</div>
+          <h2>Painting Is the Trade. Execution Is the Difference.</h2>
+          <p>Commercial painting projects fail when scope is unclear, communication is loose, crews are unmanaged, or field conditions are not documented. PROFiiT was built to close those gaps.</p>
+          <p>We approach painting like a managed construction service. Every project is planned, communicated, tracked, and completed through systems designed to protect schedules, budgets, buildings, residents, tenants, and stakeholders.</p>
+        </div>
+        <div class="list">
+          <div class="list-item">
+            <h3>Structured Scope Review</h3>
+            <p>We clarify surfaces, access, coatings, exclusions, phasing, and expectations before work begins.</p>
+          </div>
+          <div class="list-item">
+            <h3>Project Management Discipline</h3>
+            <p>Schedules, field coordination, communication rhythms, and closeout expectations are handled with professional structure.</p>
+          </div>
+          <div class="list-item">
+            <h3>Accountable Field Execution</h3>
+            <p>Crews work from clear scopes, documented priorities, site expectations, and defined quality standards.</p>
+          </div>
+          <div class="list-item">
+            <h3>Owner-Level Communication</h3>
+            <p>Managers, boards, owners, contractors, and facility teams get straightforward updates and fewer surprises.</p>
+          </div>
+          <div class="list-item">
+            <h3>Commercial Mindset</h3>
+            <p>Occupied properties, active facilities, tenant impact, safety, access, and schedule constraints are part of the plan from day one.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="section-head">
+        <div class="kicker">How We Work</div>
+        <h2>A Proven Process From Walkthrough to Closeout.</h2>
+        <p>PROFiiT uses a simple but disciplined project flow to keep teams aligned and projects moving.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <b>01</b>
+          <h3>Discovery & Site Review</h3>
+          <p>We review the property, project goals, existing conditions, access points, stakeholder needs, schedule requirements, and risk areas.</p>
+        </div>
+        <div class="step">
+          <b>02</b>
+          <h3>Scope & Estimate Development</h3>
+          <p>We define the painting scope, coating needs, surface preparation, labor assumptions, phasing, materials, and proposal structure.</p>
+        </div>
+        <div class="step">
+          <b>03</b>
+          <h3>Pre-Production Planning</h3>
+          <p>Before mobilization, we align schedule, communication, manpower, staging, safety expectations, resident or tenant impact, and site logistics.</p>
+        </div>
+        <div class="step">
+          <b>04</b>
+          <h3>Field Execution</h3>
+          <p>Crews perform the work under defined production expectations, quality standards, and management oversight.</p>
+        </div>
+        <div class="step">
+          <b>05</b>
+          <h3>Progress Communication</h3>
+          <p>Stakeholders receive clear updates on production, schedule, field conditions, changes, and next steps.</p>
+        </div>
+        <div class="step">
+          <b>06</b>
+          <h3>Punch, Closeout & Documentation</h3>
+          <p>We complete final walkthroughs, address punch items, document completion, and close the project professionally.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="projects">
+      <div class="section-head">
+        <div class="kicker">Featured Projects</div>
+        <h2>Commercial Painting Projects Managed With Control.</h2>
+        <p>Use this section to highlight completed or representative commercial painting projects. If finished project photos are limited, use project categories until real case studies are available.</p>
+      </div>
+      <div class="grid">
+        <article class="project-card">
+          <div class="project-visual"></div>
+          <div class="project-body">
+            <h3>Multifamily Exterior Repaint</h3>
+            <p>Phased exterior painting program for an occupied community with resident coordination, access planning, surface preparation, and daily production tracking.</p>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual"></div>
+          <div class="project-body">
+            <h3>Commercial Interior Refresh</h3>
+            <p>Interior painting for active commercial space completed around operating hours, tenant access needs, and a defined turnover schedule.</p>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual"></div>
+          <div class="project-body">
+            <h3>HOA Community Painting Program</h3>
+            <p>Community-wide painting scope managed for board approval, owner communication, project sequencing, punch completion, and closeout documentation.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div class="kicker">Why Owners Choose PROFiiT</div>
+        <h2>Built for Stakeholders Who Cannot Afford Guesswork.</h2>
+        <p>Commercial painting is visible, disruptive, and schedule-sensitive. PROFiiT gives owners and property teams a more controlled way to get the work done.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Clear Scope Before Start</h3>
+          <p>Everyone understands what is included, what is excluded, how the work will be phased, and what the finished result should be.</p>
+        </article>
+        <article class="card">
+          <h3>Less Operational Disruption</h3>
+          <p>Planning accounts for tenants, residents, staff, access, parking, weather, business operations, and site flow.</p>
+        </article>
+        <article class="card">
+          <h3>Professional Communication</h3>
+          <p>Decision-makers receive practical updates instead of vague promises or last-minute surprises.</p>
+        </article>
+        <article class="card">
+          <h3>Schedule Awareness</h3>
+          <p>Projects are planned around production realities, manpower, conditions, dependencies, and stakeholder deadlines.</p>
+        </article>
+        <article class="card">
+          <h3>Quality Control</h3>
+          <p>Preparation, application, finish expectations, punch items, and completion standards are managed throughout the work.</p>
+        </article>
+        <article class="card">
+          <h3>Commercial-Level Accountability</h3>
+          <p>PROFiiT brings the systems, documentation, and ownership mindset expected on serious commercial projects.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section orange">
+      <div class="section-head">
+        <div class="kicker">Start the Conversation</div>
+        <h2>Ready for a Better-Managed Commercial Painting Project?</h2>
+        <p>Bring PROFiiT into the conversation early. We will review your property, clarify the scope, identify project risks, and build a plan for professional execution.</p>
+        <a class="btn" href="#contact">Request a Project Consultation</a>
+      </div>
+    </section>
+
+    <section class="page-hero" id="services">
+      <div class="kicker">Services</div>
+      <h2>Commercial Painting Services Managed With Precision.</h2>
+      <p>PROFiiT Painting Consultants provides commercial painting services for properties, facilities, communities, campuses, and construction teams that need reliable execution and professional communication.</p>
+    </section>
+
+    <section class="section">
+      <div class="grid two">
+        <article class="card">
+          <h3>Exterior Commercial Painting</h3>
+          <p>Durable exterior painting for commercial buildings, multifamily communities, HOA properties, campuses, and facilities. We plan around access, weather, staging, surface conditions, and stakeholder communication.</p>
+        </article>
+        <article class="card">
+          <h3>Interior Commercial Painting</h3>
+          <p>Interior painting for offices, corridors, common areas, leasing centers, amenity spaces, retail environments, facilities, and active commercial spaces.</p>
+        </article>
+        <article class="card">
+          <h3>Multifamily & HOA Painting</h3>
+          <p>Painting programs for occupied communities that require phasing, resident coordination, board communication, property protection, and organized punch completion.</p>
+        </article>
+        <article class="card">
+          <h3>Facility Painting</h3>
+          <p>Painting support for operational buildings, warehouses, industrial spaces, service areas, doors, safety markings, maintenance zones, and specialty surfaces.</p>
+        </article>
+        <article class="card">
+          <h3>General Contractor Painting Support</h3>
+          <p>Painting crews and project execution support for tenant improvements, renovations, commercial interiors, punch lists, and scheduled construction work.</p>
+        </article>
+        <article class="card">
+          <h3>Coating & Surface Preparation Planning</h3>
+          <p>Scope review, surface condition assessment, prep planning, coating selection support, and execution planning for long-term finish performance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-hero" id="industries">
+      <div class="kicker">Industries</div>
+      <h2>Commercial Painting for Properties With Real Operational Demands.</h2>
+      <p>PROFiiT works with stakeholders who need painting done with planning, communication, documentation, and respect for occupied environments.</p>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>The Right Fit for Managed Properties.</h2>
+        <p>Our best clients value organized scope, professional updates, schedule awareness, field accountability, and a commercial approach to project delivery.</p>
+      </div>
+      <ul class="industry-list">
+        <li>Property Management Companies</li>
+        <li>Facility Directors</li>
+        <li>General Contractors</li>
+        <li>HOA Boards</li>
+        <li>Condominium Associations</li>
+        <li>Multifamily Owners</li>
+        <li>Commercial Building Owners</li>
+        <li>Universities & Schools</li>
+        <li>Municipal & Institutional Facilities</li>
+        <li>Retail & Hospitality Properties</li>
+        <li>Warehouses & Light Industrial Facilities</li>
+      </ul>
+    </section>
+
+    <section class="page-hero">
+      <div class="kicker">Our Process</div>
+      <h2>Our Process Keeps Painting Projects Controlled.</h2>
+      <p>PROFiiT uses a structured project workflow so owners, managers, contractors, residents, tenants, and field teams stay aligned from the first walkthrough to final closeout.</p>
+    </section>
+
+    <section class="section">
+      <div class="steps">
+        <div class="step">
+          <b>1</b>
+          <h3>Consultation</h3>
+          <p>We identify the property type, project drivers, timeline, decision-makers, budget considerations, and known concerns.</p>
+        </div>
+        <div class="step">
+          <b>2</b>
+          <h3>Site Walkthrough</h3>
+          <p>We inspect project areas, surface conditions, access needs, staging constraints, tenant or resident impact, and logistical challenges.</p>
+        </div>
+        <div class="step">
+          <b>3</b>
+          <h3>Scope Definition</h3>
+          <p>We clarify inclusions, exclusions, coating systems, preparation standards, phasing, alternates, and assumptions.</p>
+        </div>
+        <div class="step">
+          <b>4</b>
+          <h3>Proposal & Planning</h3>
+          <p>We develop a proposal that supports informed decision-making and creates a practical path for production.</p>
+        </div>
+        <div class="step">
+          <b>5</b>
+          <h3>Pre-Construction Coordination</h3>
+          <p>We align communication, schedule, manpower, safety, staging, notifications, and documentation before work begins.</p>
+        </div>
+        <div class="step">
+          <b>6</b>
+          <h3>Production Management</h3>
+          <p>Field teams execute the work under defined expectations while leadership monitors quality, progress, and project needs.</p>
+        </div>
+        <div class="step">
+          <b>7</b>
+          <h3>Closeout</h3>
+          <p>We complete walkthroughs, manage punch items, document finished areas, and close the project with accountability.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-hero">
+      <div class="kicker">Projects</div>
+      <h2>Commercial Painting Projects Across Managed Properties and Active Facilities.</h2>
+      <p>PROFiiT supports painting projects where planning, presentation, quality, safety, communication, and schedule control matter.</p>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Recommended Project Categories</h2>
+      </div>
+      <div class="grid">
+        <article class="card"><h3>Multifamily Exterior Repaints</h3><p>Large-scale exterior repaint programs for occupied communities and managed portfolios.</p></article>
+        <article class="card"><h3>HOA & Condominium Painting Programs</h3><p>Community painting scopes organized for board review, resident coordination, and closeout.</p></article>
+        <article class="card"><h3>Commercial Interior Refreshes</h3><p>Professional interior painting for offices, corridors, common spaces, and tenant environments.</p></article>
+        <article class="card"><h3>Facility Painting Projects</h3><p>Practical painting support for operational buildings, warehouses, and maintenance areas.</p></article>
+        <article class="card"><h3>Campus & Institutional Painting</h3><p>Organized painting support for schools, universities, and municipal facilities.</p></article>
+        <article class="card"><h3>Contractor-Supported Renovations</h3><p>Commercial painting execution for renovation schedules, tenant improvements, and punch work.</p></article>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="section-head">
+        <div class="kicker">Case Study Template</div>
+        <h2>Use This Layout for Future Project Pages.</h2>
+      </div>
+      <div class="case-study">
+        <div>
+          <p><strong>Project Type:</strong><br>Multifamily Exterior Repaint</p>
+          <p><strong>Client Type:</strong><br>Property Management Company</p>
+        </div>
+        <div>
+          <p><strong>Challenge:</strong><br>Occupied property, multiple buildings, access limitations, resident coordination, weather exposure, and a tight seasonal window.</p>
+          <p><strong>PROFiiT Approach:</strong><br>Structured scope review, phased schedule, field coordination, daily progress communication, surface preparation planning, and quality walkthroughs.</p>
+          <p><strong>Result:</strong><br>Completed painting program with improved property appearance, controlled disruption, documented progress, and organized closeout.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-hero" id="about">
+      <div class="kicker">About</div>
+      <h2>A Commercial Painting Company Built Around Systems.</h2>
+      <p>PROFiiT Painting Consultants exists to bring a higher level of professionalism, structure, and accountability to commercial painting projects.</p>
+    </section>
+
+    <section class="section">
+      <div class="split">
+        <div class="split-copy">
+          <p>Many painting projects are sold on promises and managed reactively. PROFiiT was built around a different standard: plan the work, communicate clearly, manage the field, document progress, and finish with accountability.</p>
+          <p>We serve clients who expect more than paint on walls. They need a partner who understands commercial properties, active facilities, resident and tenant impact, contractor coordination, and the importance of keeping stakeholders informed.</p>
+          <p>Our approach combines trade knowledge with project management discipline so owners and decision-makers can move forward with greater confidence.</p>
+        </div>
+        <div class="grid two">
+          <article class="card"><h3>Precision</h3><p>Details matter before, during, and after the work.</p></article>
+          <article class="card"><h3>Accountability</h3><p>We take ownership of communication, execution, and follow-through.</p></article>
+          <article class="card"><h3>Systems</h3><p>Repeatable processes create better project outcomes.</p></article>
+          <article class="card"><h3>Professionalism</h3><p>Every interaction should reflect the seriousness of the property and the project.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-hero" id="technology">
+      <div class="kicker">Technology</div>
+      <h2>Technology That Supports Better Painting Execution.</h2>
+      <p>PROFiiT uses practical systems, communication tools, documentation, and project controls to keep commercial painting work organized and visible.</p>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <article class="card">
+          <h3>Digital Scope Organization</h3>
+          <p>Project information, scope details, photos, notes, and priorities are organized so teams understand what must be done.</p>
+        </article>
+        <article class="card">
+          <h3>Progress Documentation</h3>
+          <p>Photo updates, field notes, completion tracking, and issue documentation help reduce confusion and support better decisions.</p>
+        </article>
+        <article class="card">
+          <h3>Communication Rhythm</h3>
+          <p>Stakeholders receive clear updates tied to project status, schedule, field conditions, and next steps.</p>
+        </article>
+        <article class="card">
+          <h3>Production Visibility</h3>
+          <p>Work is planned and monitored so progress, manpower, weather impacts, and punch items can be addressed quickly.</p>
+        </article>
+        <article class="card">
+          <h3>Closeout Support</h3>
+          <p>Final walkthroughs, punch completion, and documentation help close projects with clarity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-hero" id="contact">
+      <div class="kicker">Contact</div>
+      <h2>Request a Commercial Painting Consultation.</h2>
+      <p>Tell us about your property, project goals, timeline, and decision-making needs. PROFiiT will help you clarify the scope and determine the right next step.</p>
+    </section>
+
+    <section class="section">
+      <div class="contact-wrap">
+        <form class="contact-form">
+          <div class="grid two">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text">
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text">
+            </div>
+          </div>
+          <div class="grid two">
+            <div class="field">
+              <label for="role">Role</label>
+              <input id="role" name="role" type="text">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email">
+            </div>
+          </div>
+          <div class="grid two">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel">
+            </div>
+            <div class="field">
+              <label for="property-type">Property Type</label>
+              <select id="property-type" name="property-type">
+                <option>Commercial Building</option>
+                <option>Multifamily</option>
+                <option>HOA / Condominium</option>
+                <option>Facility / Industrial</option>
+                <option>University / Institutional</option>
+                <option>Contractor Project</option>
+              </select>
+            </div>
+          </div>
+          <div class="grid two">
+            <div class="field">
+              <label for="location">Project Location</label>
+              <input id="location" name="location" type="text">
+            </div>
+            <div class="field">
+              <label for="timeline">Project Timeline</label>
+              <input id="timeline" name="timeline" type="text">
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Tell Us About the Project</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit Project Request</button>
+        </form>
+        <aside class="note-panel">
+          <div class="kicker">Who We Serve</div>
+          <h3>For serious commercial painting projects.</h3>
+          <p>For property managers, facility directors, contractors, HOA boards, universities, and commercial owners who need painting done with structure and accountability.</p>
+          <p><strong>Footer Tagline:</strong><br>Commercial painting with precision, accountability, and proven systems.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>Commercial painting with precision, accountability, and proven systems.</div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#industries">Industries</a>
+        <a href="#process">Our Process</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#technology">Technology</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
