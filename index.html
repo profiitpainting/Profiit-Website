@@ -553,7 +553,7 @@
           <a class="btn btn-primary" href="#contact">Request a Project Consultation</a>
           <a class="btn btn-secondary" href="#process">View Our Process</a>
         </div>
-        <div class="trust-bar">EST. <span>&bull;</span> 2024</div> 
+        <div class="trust-bar">EST <span>&bull;</span> 2024</div> 
       </div>
     </section>
 
@@ -943,35 +943,36 @@
 
     <section class="section">
       <div class="contact-wrap">
-        <form class="contact-form">
+        <form class="contact-form" action="https://formspree.io/f/meeblynv" method="POST">
+          <input type="hidden" name="_subject" value="New PROFiiT Painting Consultation Request">
           <div class="grid two">
             <div class="field">
               <label for="name">Name</label>
-              <input id="name" name="name" type="text">
+              <input id="name" name="name" type="text" required>
             </div>
             <div class="field">
               <label for="company">Company</label>
-              <input id="company" name="company" type="text">
+              <input id="company" name="company" type="text" required>
             </div>
           </div>
           <div class="grid two">
             <div class="field">
               <label for="role">Role</label>
-              <input id="role" name="role" type="text">
+              <input id="role" name="role" type="text" required>
             </div>
             <div class="field">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email">
+              <input id="email" name="email" type="email" required>
             </div>
           </div>
           <div class="grid two">
             <div class="field">
               <label for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel">
+              <input id="phone" name="phone" type="tel" required>
             </div>
             <div class="field">
               <label for="property-type">Property Type</label>
-              <select id="property-type" name="property-type">
+              <select id="property-type" name="property-type" required>
                 <option>Commercial Building</option>
                 <option>Multifamily</option>
                 <option>HOA / Condominium</option>
@@ -984,16 +985,16 @@
           <div class="grid two">
             <div class="field">
               <label for="location">Project Location</label>
-              <input id="location" name="location" type="text">
+              <input id="location" name="location" type="text" required>
             </div>
             <div class="field">
               <label for="timeline">Project Timeline</label>
-              <input id="timeline" name="timeline" type="text">
+              <input id="timeline" name="timeline" type="text" required>
             </div>
           </div>
           <div class="field">
             <label for="message">Tell Us About the Project</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message" required></textarea>
           </div>
           <button class="btn btn-primary" type="submit">Submit Project Request</button>
         </form>
