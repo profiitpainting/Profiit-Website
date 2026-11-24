@@ -1,0 +1,7 @@
+.process-section{padding-top:68px}
+.process-seven{grid-template-columns:repeat(3,minmax(0,1fr))}
+.process-seven .step{min-height:235px;padding:34px 30px}
+.process-seven .step h3{margin-top:8px}
+.process-seven .step p{line-height:1.7}
+@media(max-width:950px){.process-seven{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.process-section{padding-top:36px}.process-seven{grid-template-columns:1fr}.process-seven .step{min-height:auto}}
