@@ -1,0 +1,22 @@
+@media(min-width:951px){
+  .hero{min-height:calc(100vh - 82px);position:relative;background:#070809}
+  .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#070809 0%,rgba(7,8,9,.98) 38%,rgba(7,8,9,.65) 52%,rgba(7,8,9,.12) 70%,rgba(7,8,9,.02) 88%);pointer-events:none;z-index:1}
+  .hero-grid{width:min(1500px,calc(100% - 56px));min-height:calc(100vh - 82px);position:relative;display:block;padding:0}
+  .hero-grid>div{position:relative;z-index:3;width:min(600px,48%);padding:clamp(70px,10vh,125px) 0 80px}
+  .hero h1{font-size:clamp(54px,5.7vw,88px);text-shadow:0 4px 28px rgba(0,0,0,.7)}
+  .hero .lede{max-width:560px;color:#d8dade;text-shadow:0 2px 12px rgba(0,0,0,.85)}
+  .map-frame{position:absolute;z-index:0;top:3%;right:-4%;bottom:2%;width:79%;margin:0;display:flex;flex-direction:column;justify-content:center;isolation:isolate}
+  .map-frame:before{content:"";position:absolute;z-index:-1;inset:12% 4% 8% 10%;background:radial-gradient(ellipse at 62% 55%,rgba(243,106,43,.28),rgba(243,106,43,.09) 36%,transparent 70%);filter:blur(34px);transform:scale(1.1)}
+  .map-frame:after{content:"";position:absolute;z-index:2;inset:-2px;pointer-events:none;background:linear-gradient(90deg,#070809 0%,transparent 11%,transparent 89%,#070809 100%),linear-gradient(180deg,#070809 0%,transparent 10%,transparent 89%,#070809 100%)}
+  .map-frame img{position:relative;z-index:1;width:100%;transform:scale(1.1);transform-origin:center;filter:saturate(1.13) contrast(1.05) drop-shadow(0 35px 75px rgba(0,0,0,.5));opacity:.98}
+  .map-caption{position:absolute;right:2%;bottom:1%;width:66%;margin:0;padding:16px 0 0;background:linear-gradient(90deg,transparent,rgba(7,8,9,.8));font-size:13px;z-index:3}
+}
+@media(max-width:950px){
+  .hero-grid{display:flex;flex-direction:column}
+  .hero-grid>div{width:100%}
+  .map-frame{width:calc(100% + 44px);margin-left:-22px;position:relative;isolation:isolate}
+  .map-frame:before{content:"";position:absolute;z-index:-1;inset:18% 6%;background:radial-gradient(ellipse,rgba(243,106,43,.22),transparent 70%);filter:blur(24px)}
+  .map-frame:after{content:"";position:absolute;z-index:2;inset:-2px;pointer-events:none;background:linear-gradient(90deg,#070809 0%,transparent 8%,transparent 92%,#070809 100%),linear-gradient(180deg,#070809 0%,transparent 8%,transparent 91%,#070809 100%)}
+  .map-frame img{position:relative;z-index:1;width:100%;transform:scale(1.05);filter:saturate(1.12) contrast(1.04)}
+  .map-caption{position:relative;z-index:3}
+}
